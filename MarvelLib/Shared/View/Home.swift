@@ -23,11 +23,12 @@ struct Home: View {
                 //access to data on character view
                 .environmentObject(homeData)
             
-            Text("Comics")
+            ComicsView()
                 .tabItem {
                     Image(systemName: "book.circle.fill")
                     Text("Comics")
                 }
+                .environmentObject(homeData)
         }
     }
 }
