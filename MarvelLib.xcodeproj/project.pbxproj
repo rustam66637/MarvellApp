@@ -17,6 +17,7 @@
 		30A032A526D82FAC001134E0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A032A426D82FAC001134E0 /* HomeViewModel.swift */; };
 		30A032A726D830F2001134E0 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A032A626D830F2001134E0 /* CharactersView.swift */; };
 		30A032A926D844F7001134E0 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A032A826D844F7001134E0 /* Character.swift */; };
+		30A032AB26D8FCE5001134E0 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A032AA26D8FCE5001134E0 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		30A032A426D82FAC001134E0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		30A032A626D830F2001134E0 /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
 		30A032A826D844F7001134E0 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		30A032AA26D8FCE5001134E0 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				30A032A226D82D6D001134E0 /* Home.swift */,
 				30A032A626D830F2001134E0 /* CharactersView.swift */,
+				30A032AA26D8FCE5001134E0 /* WebView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A0329B26D82C0D001134E0 /* Credentials.swift in Sources */,
+				30A032AB26D8FCE5001134E0 /* WebView.swift in Sources */,
 				30A0328926D8290E001134E0 /* ContentView.swift in Sources */,
 				30A032A926D844F7001134E0 /* Character.swift in Sources */,
 				30A032A726D830F2001134E0 /* CharactersView.swift in Sources */,
