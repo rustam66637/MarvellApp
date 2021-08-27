@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,12 @@
 		30A0328926D8290E001134E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A0328826D8290E001134E0 /* ContentView.swift */; };
 		30A0328B26D82910001134E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A0328A26D82910001134E0 /* Assets.xcassets */; };
 		30A0328E26D82910001134E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A0328D26D82910001134E0 /* Preview Assets.xcassets */; };
+		30A0329726D829C6001134E0 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 30A0329626D829C6001134E0 /* SDWebImageSwiftUI */; };
+		30A0329B26D82C0D001134E0 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A0329A26D82C0D001134E0 /* Credentials.swift */; };
+		30A032A326D82D6D001134E0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A032A226D82D6D001134E0 /* Home.swift */; };
+		30A032A526D82FAC001134E0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A032A426D82FAC001134E0 /* HomeViewModel.swift */; };
+		30A032A726D830F2001134E0 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A032A626D830F2001134E0 /* CharactersView.swift */; };
+		30A032A926D844F7001134E0 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A032A826D844F7001134E0 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,11 @@
 		30A0328A26D82910001134E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30A0328D26D82910001134E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30A0328F26D82910001134E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30A0329A26D82C0D001134E0 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		30A032A226D82D6D001134E0 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		30A032A426D82FAC001134E0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		30A032A626D830F2001134E0 /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
+		30A032A826D844F7001134E0 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A0329726D829C6001134E0 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +64,7 @@
 		30A0328526D8290E001134E0 /* MarvelLib */ = {
 			isa = PBXGroup;
 			children = (
-				30A0328626D8290E001134E0 /* MarvelLibApp.swift */,
-				30A0328826D8290E001134E0 /* ContentView.swift */,
-				30A0328A26D82910001134E0 /* Assets.xcassets */,
+				30A0329C26D82C52001134E0 /* Shared */,
 				30A0328F26D82910001134E0 /* Info.plist */,
 				30A0328C26D82910001134E0 /* Preview Content */,
 			);
@@ -67,6 +77,45 @@
 				30A0328D26D82910001134E0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30A0329C26D82C52001134E0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				30A0329D26D82C84001134E0 /* View */,
+				30A0329E26D82C91001134E0 /* Model */,
+				30A0329F26D82C99001134E0 /* ViewModel */,
+				30A0329A26D82C0D001134E0 /* Credentials.swift */,
+				30A0328626D8290E001134E0 /* MarvelLibApp.swift */,
+				30A0328826D8290E001134E0 /* ContentView.swift */,
+				30A0328A26D82910001134E0 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		30A0329D26D82C84001134E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30A032A226D82D6D001134E0 /* Home.swift */,
+				30A032A626D830F2001134E0 /* CharactersView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30A0329E26D82C91001134E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30A032A826D844F7001134E0 /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30A0329F26D82C99001134E0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				30A032A426D82FAC001134E0 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +134,9 @@
 			dependencies = (
 			);
 			name = MarvelLib;
+			packageProductDependencies = (
+				30A0329626D829C6001134E0 /* SDWebImageSwiftUI */,
+			);
 			productName = MarvelLib;
 			productReference = 30A0328326D8290E001134E0 /* MarvelLib.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +164,9 @@
 				Base,
 			);
 			mainGroup = 30A0327A26D8290E001134E0;
+			packageReferences = (
+				30A0329526D829C6001134E0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 30A0328426D8290E001134E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A0329B26D82C0D001134E0 /* Credentials.swift in Sources */,
 				30A0328926D8290E001134E0 /* ContentView.swift in Sources */,
+				30A032A926D844F7001134E0 /* Character.swift in Sources */,
+				30A032A726D830F2001134E0 /* CharactersView.swift in Sources */,
+				30A032A326D82D6D001134E0 /* Home.swift in Sources */,
+				30A032A526D82FAC001134E0 /* HomeViewModel.swift in Sources */,
 				30A0328726D8290E001134E0 /* MarvelLibApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +388,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		30A0329526D829C6001134E0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30A0329626D829C6001134E0 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30A0329526D829C6001134E0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30A0327B26D8290E001134E0 /* Project object */;
 }
