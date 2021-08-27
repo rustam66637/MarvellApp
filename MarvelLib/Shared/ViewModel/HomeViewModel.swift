@@ -13,7 +13,7 @@ class HomeViewModel: ObservableObject {
     
     @Published var searchQuery = ""
     
-    //Combine search bar
+    // Combine search bar
     // used to cancel search
     var searchCancelLabel: AnyCancellable? = nil
     
@@ -39,6 +39,7 @@ class HomeViewModel: ObservableObject {
                 }
             })
     }
+    
     
     func searchCharacter() {
         
